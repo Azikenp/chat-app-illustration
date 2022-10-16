@@ -24,7 +24,16 @@ body{
     top: -300px;
     left: -470px;
     overflow: hidden;
+    transition-property: background,width,transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
+.bg-purple:hover{
+    background: linear-gradient(to top, red,blue);
+    width: 50rem;
+    transform: rotateY(360deg);
+}
+
 
 .content{
     position: absolute;
@@ -268,5 +277,9 @@ section .dogs{
         position: absolute;
         top: -400px;
         left: -100px;
+    }
+
+    .bg-purple{
+        transition-property: none;
     }
 }
